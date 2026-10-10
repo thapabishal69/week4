@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="slider.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-bar">
+        <form>
+            <input type="text" placeholder="Search">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</header>
+
+<main>
+
+    <section class="about-container" id="about">
+
+        <div class="about-content">
+            <h1>About Me</h1>
+            <p>
+                Hello! I'm Bishal Thapa, a passionate web developer.
+            </p>
+            <p>
+                I enjoy creating responsive websites and learning
+                new technologies.
+            </p>
+        </div>
+
+        <div class="slider" id="slider">
+
+            <div class="slider-viewport">
+                <div class="slider-track">
+
+                    <div class="slide">
+                        <img src="Images/p.png" alt="Photo 1">
+                    </div>
+
+                    <div class="slide">
+                        <img src="Images/2.jpeg" alt="Photo 2">
+                    </div>
+
+                    <div class="slide">
+                        <img src="Images/3.jpeg" alt="Photo 3">
+                    </div>
+
+                    <div class="slide">
+                        <img src="Images/4.png" alt="Photo 4">
+                    </div>
+
+                    <div class="slide">
+                        <img src="Images/2.jpeg" alt="Photo 5">
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="slider-btn prev" type="button"
+                    aria-label="Previous image">&#10094;</button>
+
+            <button class="slider-btn next" type="button"
+                    aria-label="Next image">&#10095;</button>
+
+            <div class="slider-dots"></div>
+
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="certificates-container">
+            <h2>My Skills</h2>
+
+            <div class="skills-grid">
+                <div class="skills-card">
+                    <dt><strong>Programming Languages</strong></dt>
+                    <dd>Java, Python, C++, JavaScript</dd>
+                </div>
+
+                <div class="skills-card">
+                    <dt><strong>Frameworks</strong></dt>
+                    <dd>Django, ASP.NET, Angular, Blazor</dd>
+                </div>
+
+                <div class="skills-card">
+                    <dt><strong>3D Animation</strong></dt>
+                    <dd>Blender, Maya</dd>
+                </div>
+
+                <div class="skills-card">
+                    <dt><strong>Tools</strong></dt>
+                    <dd>Visual Studio, Word, Excel, PowerPoint</dd>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <div class="achievements-container">
+            <h2>Achievements</h2>
+
+            <dl>
+                <dt><strong>Completed AWS Cloud Foundations</strong></dt>
+                <dd>Earned the AWS Academy Cloud Foundations certificate.</dd>
+
+                <dt><strong>Built a Personal Portfolio Website</strong></dt>
+                <dd>Developed a personal portfolio website using HTML.</dd>
+
+                <dt><strong>Completed College Assignments</strong></dt>
+                <dd>Completed web development and programming projects during my studies.</dd>
+            </dl>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="projects-container">
+            <h2>My Projects</h2>
+
+            <article>
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                    A portfolio website created using HTML and CSS
+                    to introduce myself and showcase my work.
+                </p>
+                <p>
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/" target="_blank"
+                       rel="noopener noreferrer">View Project</a>
+                </p>
+            </article>
+
+            <hr>
+
+            <article>
+                <h3>Library Management System</h3>
+                <p>
+                    A beginner-level project for my Software Engineering
+                    course that demonstrates basic system requirements.
+                </p>
+                <p>
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/" target="_blank"
+                       rel="noopener noreferrer">View Project</a>
+                </p>
+            </article>
+
+            <hr>
+
+            <article>
+                <h3>HTML Practice Projects</h3>
+                <p>
+                    A collection of HTML webpages created while learning
+                    web development, including forms, tables, and lists.
+                </p>
+                <p>
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/" target="_blank"
+                       rel="noopener noreferrer">View Project</a>
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your full name">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="Enter your phone number">
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject"
+                       placeholder="Enter subject">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5"
+                          placeholder="Write your message here"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<div class="social-section">
+    <h3 class="follow-title">Connect with Me</h3>
+
+    <div class="social-media">
+        <a href="https://mail.google.com" target="_blank"
+           rel="noopener noreferrer">
+            <img src="Images/gmail.webp" alt="Gmail" width="40">
+        </a>
+
+        <a href="https://www.facebook.com/manoj.karki.879591"
+           target="_blank" rel="noopener noreferrer">
+            <img src="Images/facebook.webp" alt="Facebook" width="40">
+        </a>
+
+        <a href="https://www.linkedin.com/feed/" target="_blank"
+           rel="noopener noreferrer">
+            <img src="Images/linkedin.webp" alt="LinkedIn" width="40">
+        </a>
+
+        <a href="https://www.instagram.com/ma_manojkarki/"
+           target="_blank" rel="noopener noreferrer">
+            <img src="Images/instagram.webp" alt="Instagram" width="40">
+        </a>
+    </div>
+</div>
+
+<hr>
+
+<footer>
+    <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
